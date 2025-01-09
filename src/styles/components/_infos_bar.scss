@@ -1,6 +1,8 @@
 .infos-bar {
 	padding: 16px 24px;
 	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
 
 	&__infos {
 		display: flex;
@@ -14,5 +16,14 @@
 				display: block;
 			}
 		}
+	}
+	@media (max-width: 640px) {
+		display: block;
+		&__infos {
+			display: block;
+		}
+	}
+	@media (max-width: 1024px) {
+		gap: 16px;
 	}
 }

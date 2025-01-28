@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="styles/main.scss" />
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -17,7 +18,7 @@
 			<div class="container">
 				<img class="hero__logo" src="./images/ebac_logo.svg" alt="" />
 				<p class="hero__text">
-					O maior evento de tecnologia do Brasil começa em 10d 12h 20m 15s
+					O maior evento de tecnologia do Brasil começa em <span id="contador"></span>
 				</p>
 				<div class="infos-bar">
 					<ul class="infos-bar__infos">
@@ -36,8 +37,8 @@
 				</div>
 			</div>
 		</header>
-		<section class="event">
-			<div class="conteiner">
+		<section class="event event--front-end">
+			<div class="conteiner" data-aos="fade-right">
 				<div class="event__details">
 					<h2 class="event__details__title">Front-End</h2>
 					<p class="event__details__description">
@@ -48,6 +49,43 @@
 			</div>
 			<img src="images/frontend.png" alt="Front-End">
 		</section>
+		<section class="event event--ui-ux event--image-left ">
+			<div class="conteiner" data-aos="fade-left">
+				<div class="event__details">
+					<h2 class="event__details__title">UI e UX</h2>
+					<p class="event__details__description">
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum pariatur, quo
+						ipsa maxime exercitationem odio, commodi explicabo corporis adipisci ad odit, ab
+						dicta voluptas? Ratione impedit alias nobis commodi. Enim?
+					</p>
+			</div>
+			<img src="images/ui-ux.png" alt="ui-ux">
+		</section>
+		<section class="event event--data-science">
+			<div class="conteiner" data-aos="fade-right">
+				<div class="event__details">
+					<h2 class="event__details__title">Data Science</h2>
+					<p class="event__details__description">
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum pariatur, quo
+						ipsa maxime exercitationem odio, commodi explicabo corporis adipisci ad odit, ab
+						dicta voluptas? Ratione impedit alias nobis commodi. Enim?
+					</p>
+			</div>
+			<img src="images/data.png" alt="Front-End">
+		</section>
+		<section class="event event--back-end event--image-left">
+			<div class="conteiner" data-aos="fade-left">
+				<div class="event__details">
+					<h2 class="event__details__title">Back-End</h2>
+					<p class="event__details__description">
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum pariatur, quo
+						ipsa maxime exercitationem odio, commodi explicabo corporis adipisci ad odit, ab
+						dicta voluptas? Ratione impedit alias nobis commodi. Enim?
+					</p>
+			</div>
+			<img src="images/backend.png" alt="Back-End">
+		</section>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script src="scripts/main.js"></script>
 	</body>
 </html>

@@ -2,11 +2,13 @@
 @use "components/infos_bar";
 @use "components/buttons";
 @use "event";
+@use "variables";
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: Roboto, sans-serif;
+	color: variables.$text-color;
 }
 .container {
 	max-width: 960px;
